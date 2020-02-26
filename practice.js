@@ -26,7 +26,9 @@
   Write a function called first that takes in two parameters, an array and a callback function.
   Then invoke the callback function, passing in the first element in the array as it's argument.
 */
-
+function first(arr, cb){
+  return cb(arr[0])
+}
 // Code Here 
 
 // Do not edit the code below.
@@ -46,7 +48,9 @@ first(names, function(firstName){
   Write a function called last that takes in an array and a callback function. 
   Then invoke the callback, passing in the last element in the array as the argument.
 */
-
+function last(arr, cb){
+  return cb(arr[arr.length - 1]);
+}
 //Code Here
 
 // Do not edit the code below.
@@ -66,7 +70,9 @@ last(names, function(lastName){
 */
 
 //Code Here
-
+function multiply(num1, num2, cb){
+  return cb(num1 * num2)
+}
 // Do not edit the code below.
 multiply(4, 3, function(answer){
   console.log('The answer is ' + answer); //should console.log 12
@@ -85,7 +91,16 @@ multiply(4, 3, function(answer){
 */
 
 //Code Here 
-
+function contains(arr, name, cb){
+  for ( let i = 0; i < arr.length; i++){
+    if (arr[i] === name) {
+          return cb(true)
+        } else {
+          return cb(false)
+        }
+    }
+  }
+  
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
   if(result === true){
@@ -106,7 +121,17 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Here
+function uniq(arr, cb){
+  newList[];
+  for (let var i = 0; i < arr.length, i++);
+    for (let var j = 1; j < arr.legth, i++);
+    if (i === j) 
+    
+  }
+  
 
+  return cb
+}
 // Do not edit the code below.
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
@@ -121,9 +146,9 @@ uniq(names, function(uniqArr){
   Write a function called each that takes in an array of names and a callback function. 
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 */
-
+function each(arr, cb)
 //Code Here 
-
+f
 // Do not edit the code below.
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
