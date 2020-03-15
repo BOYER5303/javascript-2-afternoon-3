@@ -26,8 +26,8 @@
   Write a function called first that takes in two parameters, an array and a callback function.
   Then invoke the callback function, passing in the first element in the array as it's argument.
 */
-function first(arr, cb){
-  return cb(arr[0])
+function first(array, cb){
+  return cb(array[0])
 }
 // Code Here 
 
@@ -122,16 +122,14 @@ contains(names, 'Colt', function(result){
 
 //Code Here
 function uniq(arr, cb){
-  newList[];
-  for (let var i = 0; i < arr.length, i++);
-    for (let var j = 1; j < arr.legth, i++);
-    if (i === j) 
-    
-  }
+  //let uniqArr= [];
+  arr.filter((item, index) => arr.indexOf(item)=== index);
+  return uniqArr.indexOf(item) === index;
   
+  };
+  //return cb(newList)
 
-  return cb
-}
+  
 // Do not edit the code below.
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
@@ -146,9 +144,13 @@ uniq(names, function(uniqArr){
   Write a function called each that takes in an array of names and a callback function. 
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 */
-function each(arr, cb)
+function each(names, cb){
+  for (i = 0; i< names.length; i++){
+    return cb(names[i]);
+  }
+}
 //Code Here 
-f
+
 // Do not edit the code below.
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
@@ -165,7 +167,9 @@ each(names, function(item, indice){
 */
 
 // Code here
+function getUserById(users, id, cb){
 
+}
 // Do not edit the code below.
 var users = [
   {
